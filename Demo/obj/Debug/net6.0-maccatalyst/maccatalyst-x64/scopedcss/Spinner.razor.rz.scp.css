@@ -1,0 +1,42 @@
+.spinner[b-g82zp0j1i7] {
+    border: 16px solid silver;
+    border-top: 16px solid #337AB7;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin-b-g82zp0j1i7 700ms linear infinite;
+}
+
+@keyframes spin-b-g82zp0j1i7 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.spinnerBox[b-g82zp0j1i7] {
+    height: 216px;
+    width: 248px;
+}
+
+.messageFont[b-g82zp0j1i7] {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.32px;
+    font-feature-settings: 'cv08' on, 'zero' on;
+    /* Grey/grey-600 */
+
+    color: #596173;
+}
+
+.msgColor[b-g82zp0j1i7] {
+    color: #596173;
+}

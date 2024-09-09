@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{105523FE-C843-48FD-8171-D3C71315CFAA}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Demo/MainPage.xaml.cs">
+    <Files>
+      <File FileName="Demo/Pages/Index.razor" />
+      <File FileName="Demo/MauiProgram.cs" />
+      <File FileName="Demo/wwwroot/index.html" />
+      <File FileName="Demo/Shared/MainLayout.razor" />
+      <File FileName="Demo/Main.razor" />
+      <File FileName="Demo/ModelDialogService.cs" />
+      <File FileName="Demo/Spinner.razor" />
+      <File FileName="Demo/Spinner.razor.cs" />
+      <File FileName="Demo/Pages/Counter.razor" />
+      <File FileName="Demo/Demo.csproj" />
+      <File FileName="Demo/Spinner.razor.css" />
+      <File FileName="Demo/Pages/FetchData.razor" />
+      <File FileName="Demo/MainPage.xaml" />
+      <File FileName="Demo/MainPage.xaml.cs" Line="15" Column="28" />
+      <File FileName="Demo/App.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Demo" expanded="True">
+            <Node name="Demo" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="Images" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
+              <Node name="Spinner.razor" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Demo PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+</Properties>

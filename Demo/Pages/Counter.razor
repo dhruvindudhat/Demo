@@ -1,0 +1,56 @@
+﻿@page "/counter"
+@using Blazored.Modal
+@using System.Threading
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    [Inject]
+    public ModelDialogService ModelDialogService { get; set; }
+    private int currentCount = 0;
+    private SynchronizationContext _uiContext;
+
+    protected async override Task OnInitializedAsync()
+    {
+            _uiContext = SynchronizationContext.Current; 
+    }
+
+    private async Task IncrementCount()
+    {
+        var loader = await ShowLoader("");
+        await Task.Run(() =>
+        {
+            Thread.Sleep(500000000);
+        });
+        StopLoader(loader);
+    }
+
+    private async Task<IModalReference> ShowLoader(string message)
+    {
+        IModalReference loader = null;
+        var tcs = new TaskCompletionSource<bool>();
+        _uiContext.Post(_ =>
+        {
+            loader = ModelDialogService.ShowLoader("Please Wait");
+            tcs.SetResult(true);
+        }, null);
+        await tcs.Task;
+        return loader;
+    }
+
+    private async Task StopLoader(IModalReference loader)
+    {
+        var tcs = new TaskCompletionSource<bool>();
+        _uiContext.Post(_ =>
+        {
+            loader.Close();
+            tcs.SetResult(true);
+        }, null);
+        await tcs.Task;
+    }
+}
+
